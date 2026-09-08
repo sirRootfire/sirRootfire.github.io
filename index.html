@@ -24,36 +24,64 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white min-h-screen flex flex-col justify-between">
 
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <!-- Brand Logo & Name -->
-            <a href="#" class="group flex items-center gap-3">
-                <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-indigo-700 via-indigo-600 to-indigo-500 flex items-center justify-center text-white font-extrabold text-sm tracking-wider shadow-sm group-hover:shadow-indigo-300 group-hover:scale-105 transition-all duration-200">
-                    KS
+    <!-- Top Navigation Bar (Responsive with Mobile Menu) -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-16 flex items-center justify-between">
+                
+                <!-- Logo & Brand -->
+                <a href="#" class="group flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-indigo-600 to-indigo-500 flex items-center justify-center text-white font-extrabold text-sm tracking-wider shadow-sm group-hover:scale-105 transition-all duration-200">
+                        KS
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-indigo-600 transition block leading-tight">
+                            Khaled Gamal Seif
+                        </span>
+                        <span class="text-xs text-slate-400 font-mono block">@SirRootfire</span>
+                    </div>
+                </a>
+                
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                    <a href="#skills" class="hover:text-indigo-600 transition">Technical Matrix</a>
+                    <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+                    <a href="#work" class="hover:text-indigo-600 transition">Selected Work</a>
+                    <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition shadow-sm font-semibold">Audit Scope</a>
                 </div>
-                <div class="flex flex-col">
-                    <span class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-indigo-600 transition leading-none">
-                        Khaled Gamal Seif
-                    </span>
-                    <span class="text-[11px] font-mono text-slate-400 font-semibold tracking-wide">@SirRootfire</span>
-                </div>
-            </a>
-            
-            <!-- Desktop Navigation Links -->
-            <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-indigo-600 transition">About</a>
-                <a href="#skills" class="hover:text-indigo-600 transition">Technical Matrix</a>
-                <a href="#services" class="hover:text-indigo-600 transition">Services</a>
-                <a href="#work" class="hover:text-indigo-600 transition">Selected Work</a>
-                <a href="#contact" class="bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition shadow-sm font-semibold">Get an Audit</a>
-            </div>
 
-            <!-- Mobile Action Button -->
-            <div class="md:hidden flex items-center">
-                <a href="#contact" class="text-xs bg-indigo-600 text-white px-3 py-1.5 rounded-md font-semibold hover:bg-indigo-700">Audit Scope</a>
+                <!-- Mobile Hamburger Button -->
+                <div class="flex items-center md:hidden gap-2">
+                    <a href="#contact" class="bg-indigo-600 text-white px-3 py-1.5 rounded-lg text-xs font-semibold hover:bg-indigo-700 transition">
+                        Audit Scope
+                    </a>
+                    <button onclick="toggleMobileMenu()" id="mobile-menu-btn" aria-label="Toggle menu" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
+                        <!-- Icon Open (Hamburger) -->
+                        <svg id="menu-icon-bars" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <!-- Icon Close (X) -->
+                        <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
             </div>
         </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-md px-4 pt-3 pb-5 space-y-2 shadow-lg">
+            <a href="#about" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">About</a>
+            <a href="#skills" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Technical Matrix</a>
+            <a href="#services" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Services</a>
+            <a href="#work" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Selected Work</a>
+            <a href="#contact" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Contact</a>
+        </div>
     </nav>
+
 
     <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12 pb-0">
         <div class="flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
@@ -610,19 +638,44 @@
                 otherInput.value = '';
             }
         }
-        function selectService(serviceValue) {
-        const selectElement = document.getElementById('service-type-select');
-        if (selectElement) {
-            selectElement.value = serviceValue;
-            
-            toggleOtherInput(serviceValue);
 
-            selectElement.classList.add('ring-2', 'ring-indigo-600');
-            setTimeout(() => {
-                selectElement.classList.remove('ring-2', 'ring-indigo-600');
-            }, 1200);
+        function selectService(serviceValue) {
+          const selectElement = document.getElementById('service-type-select');
+          if (selectElement) {
+              selectElement.value = serviceValue;
+              
+              toggleOtherInput(serviceValue);
+
+              selectElement.classList.add('ring-2', 'ring-indigo-600');
+              setTimeout(() => {
+                  selectElement.classList.remove('ring-2', 'ring-indigo-600');
+              }, 1200);
+          }
         }
-    }
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const iconBars = document.getElementById('menu-icon-bars');
+            const iconClose = document.getElementById('menu-icon-close');
+            
+            const isHidden = menu.classList.contains('hidden');
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                iconBars.classList.add('hidden');
+                iconClose.classList.remove('hidden');
+            } else {
+                closeMobileMenu();
+            }
+        }
+
+        function closeMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const iconBars = document.getElementById('menu-icon-bars');
+            const iconClose = document.getElementById('menu-icon-close');
+            
+            if (menu) menu.classList.add('hidden');
+            if (iconBars) iconBars.classList.remove('hidden');
+            if (iconClose) iconClose.classList.add('hidden');
+        }
     </script>
 </body>
 </html>
