@@ -3,59 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khaled Gamal Seif | Penetration Tester & Web Security Consultant</title>
-    <meta name="description" content="Freelance Web Penetration Tester helping businesses discover vulnerabilities, secure data, and prevent breaches.">
+    <title>Khaled Gamal Seif (@SirRootfire) | Penetration Tester & Security Consultant</title>
+    <meta name="description" content="Freelance Penetration Tester specializing in Web Applications, APIs, Internal Networks, and Active Directory security assessments.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+        }
+        /* Smooth transitions for tabs and active elements */
+        .tab-indicator-active {
+            border-color: #4f46e5;
+            color: #4f46e5;
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white min-h-screen flex flex-col justify-between">
 
-
-    <!-- Top Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <!-- Brand Logo & Name -->
             <a href="#" class="group flex items-center gap-3">
-              <!-- Cyber / Minimal KS Logo Icon -->
-              <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-indigo-600 to-indigo-500 flex items-center justify-center text-white font-extrabold text-sm tracking-wider shadow-sm group-hover:shadow-indigo-200 group-hover:scale-105 transition-all duration-200">
-                KS
-              </div>
-              <span class="font-extrabold text-xl tracking-tight text-slate-900 group-hover:text-indigo-600 transition">
-                Khaled Gamal Seif
-              </span>
+                <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-indigo-700 via-indigo-600 to-indigo-500 flex items-center justify-center text-white font-extrabold text-sm tracking-wider shadow-sm group-hover:shadow-indigo-300 group-hover:scale-105 transition-all duration-200">
+                    KS
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-indigo-600 transition leading-none">
+                        Khaled Gamal Seif
+                    </span>
+                    <span class="text-[11px] font-mono text-slate-400 font-semibold tracking-wide">@SirRootfire</span>
+                </div>
             </a>
             
             <!-- Desktop Navigation Links -->
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+            <div class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-600">
                 <a href="#about" class="hover:text-indigo-600 transition">About</a>
-                <a href="#skills" class="hover:text-indigo-600 transition">Skills & Stack</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Technical Matrix</a>
                 <a href="#services" class="hover:text-indigo-600 transition">Services</a>
                 <a href="#work" class="hover:text-indigo-600 transition">Case Studies</a>
                 <a href="#contact" class="bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-indigo-600 transition shadow-sm font-semibold">Get an Audit</a>
             </div>
+
+            <!-- Mobile Action Button -->
+            <div class="md:hidden flex items-center">
+                <a href="#contact" class="text-xs bg-indigo-600 text-white px-3 py-1.5 rounded-md font-semibold hover:bg-indigo-700">Audit Scope</a>
+            </div>
         </div>
     </nav>
-    <!-- Hero Section (Left-aligned & Flush to Core Skills Bar) -->
-    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-14 pb-0">
+
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12 pb-0">
         <div class="flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
             
-            <!-- Left Content Column (Shifted Left & Wider) -->
+            <!-- Left Content Column -->
             <div class="w-full md:max-w-2xl lg:max-w-3xl pb-8 md:pb-12 text-center md:text-left z-10">
-                <span class="inline-block py-1.5 px-3.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-700 mb-4 tracking-wide">
-                    Available for Security Assessments & Bug Bounties
-                </span>
-                <p class="text-slate-500 text-base md:text-lg font-medium mb-2">Hi, my name is Khaled Gamal Seif <br>@SirRootfire </p>
-                <h1 class="text-4xl sm:text-5xl lg:text-[56px] font-extrabold text-slate-900 tracking-tight leading-[1.12]">
-                    Freelance Web Penetration Tester & Security Consultant
+                <div class="inline-flex items-center gap-2 py-1.5 px-3.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 mb-4 tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    Available for Security Audits, Pentests & Red Teaming
+                </div>
+                
+                <p class="text-slate-500 text-sm md:text-base font-medium mb-2">
+                    Hi, my name is Khaled Gamal Seif <span class="text-indigo-600 font-mono font-semibold">(@SirRootfire)</span>
+                </p>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                    Freelance Penetration Tester & Security Consultant
                 </h1>
+                
                 <p class="mt-4 text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl">
-                    I help startups and businesses identify critical vulnerabilities (OWASP Top 10, IDOR, Broken Access Control) and fix flaws before malicious actors exploit them.
+                    I uncover attack vectors across <strong class="text-slate-900 font-semibold">Web Applications, APIs, Internal Networks, and Active Directory</strong> environments—identifying deep business logic flaws, lateral movement paths, and misconfigurations before malicious adversaries strike.
                 </p>
                 
                 <!-- CTA Buttons -->
@@ -63,294 +82,524 @@
                     <a href="#contact" class="inline-flex justify-center items-center px-7 py-3.5 border border-transparent text-base font-semibold rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 shadow-md transition">
                         Request a Security Audit
                     </a>
-                    <a href="#work" class="inline-flex justify-center items-center px-7 py-3.5 border border-slate-300 text-base font-semibold rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition">
-                        View Case Studies
+                    <a href="#work" class="inline-flex justify-center items-center px-7 py-3.5 border border-slate-300 text-base font-semibold rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition shadow-sm">
+                        FIND OUT MORE
                     </a>
                 </div>
             </div>
 
-            <!-- Right Profile Image (Wide & Resting directly on the skills bar) -->
+            <!-- Right Profile Image: Flush to bottom shelf line -->
             <div class="w-full md:w-[480px] lg:w-[540px] shrink-0 flex justify-center md:justify-end -mb-[1px]">
                 <img src="./portfolio.png" 
-                     alt="Khaled Gamal Seif" 
-                     class="w-full h-auto max-h-[520px] object-contain object-bottom block">
+                     alt="Khaled Gamal Seif - Security Consultant" 
+                     class="w-full h-auto max-h-[520px] object-contain object-bottom block"
+                     onerror="this.onerror=null; this.src='https://placehold.co/520x520/e2e8f0/475569?text=Khaled+Gamal+Seif';">
             </div>
 
         </div>
     </header>
 
-    <!-- Core Skills Bar (Serving as the solid base for the photo) -->
     <div class="border-t border-b border-slate-200 bg-white py-4 shadow-sm relative z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-center md:justify-between items-center gap-y-3 gap-x-8 text-xs sm:text-sm font-semibold text-slate-700">
             <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
-                <span>Web Application Pentesting</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
+                <span>Web Application Pentesting (OWASP Top 10)</span>
             </div>
             <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
-                <span>API Security Assessments</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-600"></span>
+                <span>API Security & Token Flow Audits</span>
             </div>
             <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
-                <span>Network Pentesting</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                <span>External & Internal Network Pentesting</span>
             </div>
             <div class="flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-indigo-600"></span>
-                <span>Active Directory Pentesting</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
+                <span>Active Directory & Lateral Movement</span>
             </div>
         </div>
     </div>
-    </header>
 
-    <!-- Trust Badges -->
-    <div class="border-y border-slate-200 bg-white py-6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-center md:justify-around items-center gap-6 text-slate-400 font-bold text-xs sm:text-sm tracking-wide">
-            <span>HACK THE BOX (HTB)</span>
-            <span>INFORMATION TECHNOLOGY INSTITUTE (ITI)</span>
-            <span>DIGITAL EGYPT PIONEERS (DEPI)</span>
-            <span>NATIONAL TELECOM INSTITUTE (NTI)</span>
+    <div class="border-b border-slate-200 bg-slate-50/80 py-5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-center md:justify-around items-center gap-6 text-slate-400 font-bold text-xs sm:text-sm tracking-wider uppercase">
+            <span class="hover:text-slate-600 transition">HACK THE BOX (HTB)</span>
+            <span class="hover:text-slate-600 transition">INFORMATION TECHNOLOGY INSTITUTE (ITI)</span>
+            <span class="hover:text-slate-600 transition">DIGITAL EGYPT PIONEERS (DEPI)</span>
+            <span class="hover:text-slate-600 transition">NATIONAL TELECOM INSTITUTE (NTI)</span>
         </div>
     </div>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 max-w-4xl mx-auto px-4 sm:px-6">
-        <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">About Me</h2>
-        <h3 class="text-3xl font-bold text-slate-900 mb-6">A security researcher who thinks like an attacker to protect your business.</h3>
-        <div class="space-y-4 text-slate-600 text-lg leading-relaxed">
-            <p>
-                Automated scanners often look for known signatures while completely missing critical logical vulnerabilities. I focus on finding flaws that impact your direct revenue and customer privacy—specifically Broken Object Level Authorization (BOLA/IDOR), authentication bypasses, and privilege escalations.
-            </p>
-            <p>
-                When you partner with me, you don't receive an overwhelming and generic 200-page scanner dump. Instead, you get concise, step-by-step reproduction steps (PoC), clear business impact analysis, and practical remediation guidance tailored for your developers.
-            </p>
+    <!-- About Section (Gajdos-style Value & Story) -->
+    <section id="about" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            
+            <div class="flex items-center gap-3 mb-4">
+                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest">About Me</h2>
+            </div>
+
+            <!-- Main Narrative -->
+            <div class="space-y-5 text-slate-600 text-lg leading-relaxed font-normal">
+                <p>
+                    I am <span class="font-semibold text-slate-900">Khaled Gamal Seif (@sirrootfire)</span>, a penetration tester and security researcher. Automated tools often scan for surface-level signatures while missing deep architectural flaws. My approach focuses on practical impact and adversary simulation—breaking perimeters the way real attackers do so you can remediate them before a breach occurs.
+                </p>
+                <p>
+                    My offensive assessments span web applications (with an emphasis on broken access control, IDOR, and business logic bypasses), internal network penetration, and <span class="font-medium text-slate-800">Active Directory attack paths</span> such as domain privilege escalation and lateral movement.
+                </p>
+                <p>
+                  By combining offensive tooling (<code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">Burp Suite</code>, <code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">BloodHound</code>, <code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">Impacket</code>) with custom Python/Bash scripting and solid Linux fundamentals, I ensure you receive actionable, proof-of-concept-backed reports rather than generic scanner noise.
+                </p>
+              </div>
+
         </div>
     </section>
 
-    <!-- Interactive Skills Section (Tabs style like Andrej's site) -->
-    <section id="skills" class="py-16 bg-white border-t border-slate-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Technical Matrix</h2>
-            <h3 class="text-3xl font-bold text-slate-900 mb-8">Skills, Tools & Technologies</h3>
-
-            <!-- Tabs Nav -->
-            <div class="flex border-b border-slate-200 mb-8 space-x-6 text-sm font-semibold">
-                <button onclick="switchTab('pentest')" id="tab-btn-pentest" class="pb-3 border-b-2 border-indigo-600 text-indigo-600 focus:outline-none">Security Disciplines</button>
-                <button onclick="switchTab('tools')" id="tab-btn-tools" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none">Security Tools</button>
-                <button onclick="switchTab('dev')" id="tab-btn-dev" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none">Systems & Scripting</button>
+    <section id="skills" class="py-16 bg-white border-t border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center md:text-left mb-8">
+                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Technical Capabilities</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Offensive Tooling & Core Competencies</h3>
             </div>
 
-            <!-- Tab Content 1: Pentesting -->
-            <div id="tab-pentest" class="grid sm:grid-cols-2 gap-4">
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">OWASP Top 10</h4>
-                    <p class="text-sm text-slate-600">Manual vulnerability testing covering injection, SSRF, XSS, and security misconfigurations.</p>
+            <!-- Tab Navigation -->
+            <div class="flex overflow-x-auto border-b border-slate-200 mb-8 space-x-6 text-sm font-semibold pb-1 scrollbar-none">
+                <button onclick="switchTab('webapi')" id="tab-btn-webapi" class="pb-3 border-b-2 border-indigo-600 text-indigo-600 focus:outline-none whitespace-nowrap">
+                    Web & API Security
+                </button>
+                <button onclick="switchTab('networkad')" id="tab-btn-networkad" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
+                    Network & Active Directory
+                </button>
+                <button onclick="switchTab('tools')" id="tab-btn-tools" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
+                    Offensive Tooling
+                </button>
+                <button onclick="switchTab('systems')" id="tab-btn-systems" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
+                    Systems & Automation
+                </button>
+            </div>
+
+            <!-- Tab 1: Web & API Security -->
+            <div id="tab-webapi" class="grid sm:grid-cols-2 gap-4">
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> OWASP Top 10 Manual Testing
+                    </h4>
+                    <p class="text-sm text-slate-600">Deep manual inspection covering Injection (SQLi/Command), SSRF, Broken Authentication, Cross-Site Scripting (XSS), and CORS misconfigurations.</p>
                 </div>
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">Access Control & IDOR</h4>
-                    <p class="text-sm text-slate-600">Specialized inspection of multi-tenant endpoints and privilege escalation flows.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> IDOR & Authorization Logic
+                    </h4>
+                    <p class="text-sm text-slate-600">Exhaustive testing for Broken Object Level Authorization (BOLA/IDOR), multi-tenant isolation breaches, and horizontal/vertical privilege escalations.</p>
                 </div>
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">API Security Audits</h4>
-                    <p class="text-sm text-slate-600">Rest API payload tampering, authentication token analysis, and rate-limit bypassing.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> API & Microservices Auditing
+                    </h4>
+                    <p class="text-sm text-slate-600">REST & GraphQL endpoint probing, mass assignment, JWT token manipulation, header injection, and rate-limiting bypasses.</p>
                 </div>
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">Remediation Verification</h4>
-                    <p class="text-sm text-slate-600">Re-testing patched logic to ensure vulnerabilities cannot be bypassed.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Business Logic Flaws
+                    </h4>
+                    <p class="text-sm text-slate-600">Analyzing custom workflows such as checkout flows, password resets, coupon exploits, and race conditions that bypass static defenses.</p>
                 </div>
             </div>
 
-            <!-- Tab Content 2: Tools (Hidden by default) -->
+            <!-- Tab 2: Network & Active Directory -->
+            <div id="tab-networkad" class="hidden grid sm:grid-cols-2 gap-4">
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Active Directory Domain Exploitation
+                    </h4>
+                    <p class="text-sm text-slate-600">Identification of abuse paths using BloodHound, Kerberoasting service accounts, AS-REP Roasting, DCSync, and ACL misconfigurations.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Lateral Movement & Credential Dumping
+                    </h4>
+                    <p class="text-sm text-slate-600">NTLM relay techniques, Pass-the-Hash / Pass-the-Ticket, token manipulation, and exploiting unconstrained delegation vectors.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> External Perimeter Audits
+                    </h4>
+                    <p class="text-sm text-slate-600">Mapping internet-facing IP ranges, VPN gateways, firewall rule verification, and fingerprinting exposed obsolete software services.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Internal Network Segmentation
+                    </h4>
+                    <p class="text-sm text-slate-600">Subnet enumeration, assessing VLAN isolation, rogue DHCP detection, and inspecting unencrypted internal management protocols.</p>
+                </div>
+            </div>
+
+            <!-- Tab 3: Offensive Tooling -->
             <div id="tab-tools" class="hidden grid sm:grid-cols-2 gap-4">
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">Burp Suite & OWASP ZAP</h4>
-                    <p class="text-sm text-slate-600">Intercepting proxy, customized macro fuzzing, and manual HTTP tampering.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Web & API Proxy Suites
+                    </h4>
+                    <p class="text-sm text-slate-600">Burp Suite Professional, OWASP ZAP, Caido, Postman, Turbo Intruder, and custom BPython extensions.</p>
                 </div>
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">Reconnaissance & Enumeration</h4>
-                    <p class="text-sm text-slate-600">ffuf, katana, subfinder, and dirsearch for mapping attack surfaces.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Recon & Content Discovery
+                    </h4>
+                    <p class="text-sm text-slate-600">ffuf, katana, amass, subfinder, httpx, nmap, masscan, and dirsearch for comprehensive asset enumeration.</p>
                 </div>
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">Network & Analysis</h4>
-                    <p class="text-sm text-slate-600">Nmap port scanning, service auditing, and Wireshark traffic inspection.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Active Directory & Credential Toolkits
+                    </h4>
+                    <p class="text-sm text-slate-600">Impacket framework, BloodHound / SharpHound, Responder, CrackMapExec / NetExec, Mimikatz, and Rubeus.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Network & Traffic Analysis
+                    </h4>
+                    <p class="text-sm text-slate-600">Wireshark, Metasploit Framework, tcpdump, and SNMP/SMB auditing utilities.</p>
                 </div>
             </div>
 
-            <!-- Tab Content 3: Dev (Hidden by default) -->
-            <div id="tab-dev" class="hidden grid sm:grid-cols-2 gap-4">
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">Linux Administration</h4>
-                    <p class="text-sm text-slate-600">Red Hat & Debian environments, system permissions, and Bash automation.</p>
+            <!-- Tab 4: Systems & Automation -->
+            <div id="tab-systems" class="hidden grid sm:grid-cols-2 gap-4">
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Linux & Windows Administration
+                    </h4>
+                    <p class="text-sm text-slate-600">Red Hat Enterprise Linux (NTI certified track), Debian/Kali environments, system hardening, and Windows Server internals.</p>
                 </div>
-                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
-                    <h4 class="font-bold text-slate-900 mb-1">Scripting & Web</h4>
-                    <p class="text-sm text-slate-600">Python exploit writing, JavaScript basics, PHP, and Git source auditing.</p>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Custom Exploit & Recon Scripting
+                    </h4>
+                    <p class="text-sm text-slate-600">Python 3 exploit crafting, Bash pipeline automation, PowerShell for Active Directory enumeration, and regex data extraction.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Development Stack Understanding
+                    </h4>
+                    <p class="text-sm text-slate-600">JavaScript/Node.js, PHP, HTML5/CSS3, SQL, and Git repository auditing to facilitate developer-level remediation advice.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Security Reporting & Verification
+                    </h4>
+                    <p class="text-sm text-slate-600">Writing CVSS-scored, executive-ready, and developer-actionable security reports accompanied by structured patch validation.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-20 max-w-6xl mx-auto px-4 sm:px-6">
-        <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2 text-center">Services</h2>
-        <h3 class="text-3xl font-bold text-slate-900 mb-12 text-center">How I Can Secure Your Product</h3>
+    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest">Service Offerings</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
+                Specialized Offensive Security Engagements
+            </h3>
+            <p class="text-slate-600 text-base max-w-2xl mx-auto mt-4">
+                Tailored security testing models designed to address risks at the application layer, infrastructure layer, and enterprise identity level.
+            </p>
+        </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- 01: Web & API -->
+            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
                 <div>
-                    <span class="text-indigo-600 font-mono text-sm font-semibold">01. Comprehensive VAPT</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-4">Web Vulnerability Assessment</h4>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">01. Web & API</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Web & API Penetration Testing</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        End-to-end testing of your web application for OWASP Top 10 vulnerabilities with reproducible proof-of-concept steps.
+                        Comprehensive manual assessments covering the complete OWASP Top 10, multi-tenant BOLA/IDOR flaws, and business logic bypasses.
                     </p>
                 </div>
-                <a href="#contact" class="mt-8 text-sm font-semibold text-indigo-600 hover:text-indigo-800">Inquire Service →</a>
+                <a href="#contact" onclick="selectService('Web & API Pentest')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                    Book Service <span>→</span>
+                </a>
             </div>
 
-            <div class="bg-white p-8 rounded-xl border-2 border-indigo-600 shadow-md flex flex-col justify-between relative">
-                <span class="absolute -top-3 left-6 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase">Most Requested</span>
+            <!-- 02: Active Directory (Removed High Demand badge & border) -->
+            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
                 <div>
-                    <span class="text-indigo-600 font-mono text-sm font-semibold">02. Access Logic Audit</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-4">IDOR & Privilege Testing</h4>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">02. Identity & Domain</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Active Directory & Internal Pentest</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Deep manual inspection of user access rights, sensitive resource tokens, and cross-account data isolation.
+                        Auditing enterprise Windows domains for privilege escalation, Kerberoasting, weak ACLs, and lateral movement leading to Domain Admin.
                     </p>
                 </div>
-                <a href="#contact" class="mt-8 text-sm font-semibold text-indigo-600 hover:text-indigo-800">Inquire Service →</a>
+                <a href="#contact" onclick="selectService('Active Directory Pentest')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                    Book Service <span>→</span>
+                </a>
             </div>
 
-            <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+            <!-- 03: Infrastructure -->
+            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
                 <div>
-                    <span class="text-indigo-600 font-mono text-sm font-semibold">03. Developer Support</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-4">Patch Verification & Retest</h4>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">03. Infrastructure</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Network Perimeter Auditing</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Collaborating with your engineering team to verify implemented patches and confirm that no edge-cases remain vulnerable.
+                        Scanning external attack surfaces, identifying exposed services, outdated daemons, misconfigured firewalls, and leaky subnets.
                     </p>
                 </div>
-                <a href="#contact" class="mt-8 text-sm font-semibold text-indigo-600 hover:text-indigo-800">Inquire Service →</a>
+                <a href="#contact" onclick="selectService('Network Pentest')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                    Book Service <span>→</span>
+                </a>
+            </div>
+
+            <!-- 04: Consultation -->
+            <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
+                <div>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">04. Consultation</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Remediation & Patch Verification</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Step-by-step guidance for your developers to address root causes, followed by rigorous re-testing to certify fixes.
+                    </p>
+                </div>
+                <a href="#contact" onclick="selectService('Remediation & Re-test')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                    Book Service <span>→</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Work / Case Studies Section -->
-    <section id="work" class="py-20 bg-slate-100 border-t border-slate-200">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Case Studies</h2>
-            <h3 class="text-3xl font-bold text-slate-900 mb-10">Selected Security Work</h3>
+    <section id="work" class="py-20 bg-slate-100/80 border-t border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center md:text-left mb-12">
+                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Selected Work</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Documented Security Case Studies</h3>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Demonstrating practical assessment scenarios across applications, networks, and domain architectures.</p>
+            </div>
 
-            <div class="space-y-8">
-                <!-- Case 1 -->
-                <div class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+            <div class="space-y-6">
+                <!-- Case 1: Web & API -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
                     <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-                        <h4 class="text-xl font-bold text-slate-900">Web Application Access Control & IDOR Assessment</h4>
-                        <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-1 rounded">Web Security</span>
+                        <h4 class="text-xl font-bold text-slate-900">Multi-Tenant Web Application Authorization & IDOR Assessment</h4>
+                        <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">Web & API</span>
                     </div>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Conducted an extensive manual security audit for an authenticated multi-user application. Discovered critical Broken Object Level Authorization (IDOR) that could have exposed private account records. Provided actionable PoC scripts and remediation advice.
+                        Audited an authenticated SaaS platform with multi-tenant user hierarchies. Identified critical Broken Object Level Authorization (IDOR) flaws within backend REST endpoints that allowed tenant data exfiltration across account boundaries. Provided detailed HTTP request/response proofs-of-concept and worked directly with engineers to implement secure tenant-scoped database query filters.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-slate-100 px-2 py-1 rounded">Burp Suite</span>
-                        <span class="bg-slate-100 px-2 py-1 rounded">Access Control</span>
-                        <span class="bg-slate-100 px-2 py-1 rounded">PoC Reports</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Burp Suite Pro</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">BOLA / IDOR</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">REST API</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Developer Remediation</span>
                     </div>
                 </div>
 
-                <!-- Case 2 -->
-                <div class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+                <!-- Case 2: Active Directory -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
                     <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-                        <h4 class="text-xl font-bold text-slate-900">Network Perimeter & Service Hardening Lab</h4>
-                        <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-2.5 py-1 rounded">Infrastructure</span>
+                        <h4 class="text-xl font-bold text-slate-900">Active Directory Domain Compromise & Lateral Movement Simulation</h4>
+                        <span class="bg-amber-50 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Active Directory</span>
                     </div>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Mapped server attack surface, identified non-essential active services, and implemented firewall & service-level policies reducing external attack surface by 80%.
+                        Executed an assumed-breach assessment starting from a non-privileged domain user. Utilized BloodHound to map shortest attack paths, extracted TGS tickets via Kerberoasting, cracked weak service account hashes offline, and leveraged excessive WriteDacl rights on an IT admin group to achieve full Domain Admin persistence and extract NTDS.dit safely in a controlled lab audit.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-slate-100 px-2 py-1 rounded">Nmap</span>
-                        <span class="bg-slate-100 px-2 py-1 rounded">Wireshark</span>
-                        <span class="bg-slate-100 px-2 py-1 rounded">Linux Hardening</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">BloodHound</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Kerberoasting</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Impacket</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Privilege Escalation</span>
+                    </div>
+                </div>
+
+                <!-- Case 3: Network Infrastructure -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+                        <h4 class="text-xl font-bold text-slate-900">Perimeter Reconnaissance & Vulnerable Service Hardening</h4>
+                        <span class="bg-emerald-50 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Network Security</span>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Conducted an external attack surface reconnaissance across an organization's public IP subnets. Identified unpatched remote services, leaky SNMP community strings, and misconfigured port forwardings that bypassed perimeter stateful firewalls. Authored an executive summary along with strict iptables and service-decommissioning policies.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Nmap Scripting Engine</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Wireshark</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">SNMP Auditing</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Firewall Hardening</span>
+                    </div>
+                </div>
+
+                <!-- Case 4: Automation & Tooling -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+                        <h4 class="text-xl font-bold text-slate-900">Custom Automated Asset Discovery & Endpoint Fuzzing Engine</h4>
+                        <span class="bg-cyan-50 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">Offensive Tooling</span>
+                    </div>
+                    <p class="text-slate-600 text-sm mb-4 leading-relaxed">
+                        Engineered a modular Python and Bash reconnaissance pipeline integrating multiple passive sub-domain aggregators, live host resolution, and selective ffuf path fuzzing. Built to streamline fast surface enumeration on large-scope bug bounties and corporate assessment engagements.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Python 3</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Bash Automation</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">ffuf / httpx</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Recon Pipeline</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Contact Form (Gajdos-style qualification form) -->
     <section id="contact" class="py-20 max-w-3xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-10">
-            <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Start a Project</h2>
-            <h3 class="text-3xl font-bold text-slate-900">Ready to secure your application?</h3>
-            <p class="text-slate-600 text-sm mt-2">Fill in the scope details below or email directly at <a href="mailto:khaled.gamal.seif1@gmail.com" class="text-indigo-600 font-semibold underline">khaled.gamal.seif1@gmail.com</a></p>
+            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2 inline-block">Engage Security Services</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Ready to Audit & Secure Your Assets?</h3>
+            <p class="text-slate-600 text-sm sm:text-base mt-2">
+                Provide your scope specifications below or email directly at 
+                <a href="mailto:khaled.gamal.seif1@gmail.com" class="text-indigo-600 font-semibold underline hover:text-indigo-800">
+                    khaled.gamal.seif1@gmail.com
+                </a>
+            </p>
         </div>
 
-        <!-- Formspree ready: Replace with your Formspree ID -->
-        <form action="https://formspree.io/f/xppzyvyr" method="POST" class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+        <!-- Formspree Endpoint Form -->
+        <form action="https://formspree.io/f/xppzyvyr" method="POST" class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+            
+            <!-- Scope Type Select with Dynamic Other option -->
             <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-2">What type of security testing do you need?</label>
-                <select id="service-type-select" name="service_type" onchange="toggleOtherInput(this.value)" class="w-full border border-slate-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none">
-                    <option value="Web Application Pentest">Web Application Pentest (Full OWASP Scope)</option>
-                    <option value="IDOR / Access Control Focus">Access Control & Business Logic Review</option>
-                    <option value="API Audit">API Security Assessment</option>
-                    <option value="Consultation">General Security Consultation</option>
-                    <option value="Other">Other (Please specify)</option>
-                </select>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">
+                    What type of security assessment do you require?
+                </label>
+                <select id="service-type-select" name="service_type" onchange="toggleOtherInput(this.value)" class="w-full border border-slate-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
+                  <option value="Web & API Pentest">Web & API Penetration Testing (OWASP / Logic)</option>
+                  <option value="Active Directory Pentest">Active Directory & Internal Domain Assessment</option>
+                  <option value="Network Pentest">Network Perimeter & Infrastructure Pentest</option>
+                  <option value="Remediation & Re-test">Remediation & Patch Verification Consultation</option>
+                  <option value="Other">Other (Please specify)</option>
+              </select>
 
+                <!-- Dynamic Field when Other is selected -->
                 <div id="other-input-container" class="hidden mt-3">
-                    <label class="block text-xs font-semibold text-slate-600 mb-1">Please specify your project / service type:</label>
-                    <input type="text" id="other-service-input" name="other_service_detail" placeholder="e.g., Mobile App Pentest, Smart Contract Review, etc." class="w-full border border-indigo-300 bg-indigo-50/30 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none">
+                    <label class="block text-xs font-semibold text-slate-600 mb-1">
+                        Please specify your required engagement or technology stack:
+                    </label>
+                    <input type="text" id="other-service-input" name="other_service_detail" placeholder="e.g., Cloud AWS Audit, Mobile App, Source Code Review..." class="w-full border border-indigo-300 bg-indigo-50/30 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
                 </div>
             </div>
 
+            <!-- Target Scope / URL -->
             <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-2">Target URL / Application Scope</label>
-                <input type="text" name="scope_target" placeholder="e.g., staging.yourapp.com (or leave blank if private)" class="w-full border border-slate-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none">
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Target Scope or Domain (IPs / URLs)</label>
+                <input type="text" name="scope_target" placeholder="e.g., staging.company.com, 192.168.1.0/24 (or leave blank if private/NDA)" class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
             </div>
 
+            <!-- Contact Credentials -->
             <div class="grid sm:grid-cols-2 gap-4">
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-2">Your Name</label>
-                    <input type="text" required name="name" placeholder="John Doe" class="w-full border border-slate-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none">
+                    <input type="text" required name="name" placeholder="John Doe" class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
                 </div>
                 <div>
                     <label class="block text-sm font-semibold text-slate-700 mb-2">Your Email</label>
-                    <input type="email" required name="email" placeholder="john@company.com" class="w-full border border-slate-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none">
+                    <input type="email" required name="email" placeholder="john@company.com" class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
                 </div>
             </div>
 
+            <!-- Project Details & Timeline -->
             <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-2">Project Details & Timeline</label>
-                <textarea rows="4" name="message" placeholder="Describe your web stack, timeline expectations, or any specific concerns..." class="w-full border border-slate-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none"></textarea>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Project Scope, Environment & Timeline</label>
+                <textarea rows="4" name="message" placeholder="Please describe your architecture, testing window, whether staging or production, and any specific compliance needs..." class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition"></textarea>
             </div>
 
-            <button type="submit" class="w-full py-3.5 px-6 rounded-lg text-white font-semibold bg-indigo-600 hover:bg-indigo-700 transition shadow-md">
-                Send Scope & Request Audit
+            <!-- Submit Button -->
+            <button type="submit" class="w-full py-4 px-6 rounded-lg text-white font-semibold bg-indigo-600 hover:bg-indigo-700 transition shadow-md hover:shadow-indigo-200">
+                Send Scope & Request Assessment
             </button>
+            
+            <p class="text-center text-xs text-slate-400">
+                All inquiries are treated with strict confidentiality. Non-Disclosure Agreements (NDAs) available upon request.
+            </p>
         </form>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white border-t border-slate-200 py-10">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-            <div>© 2026 Khaled Gamal Seif. Built with clean code & security in mind.</div>
-            <div class="flex space-x-6">
-                <a href="https://linkedin.com" target="_blank" class="hover:text-indigo-600">LinkedIn</a>
-                <a href="https://github.com" target="_blank" class="hover:text-indigo-600">GitHub</a>
-                <a href="#contact" class="hover:text-indigo-600">Contact</a>
+    <!-- Footer with Social Icons -->
+    <footer class="bg-white border-t border-slate-200 py-10 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            
+            <!-- Left Info -->
+            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-sm text-slate-600 text-center sm:text-left">
+                <span class="font-bold text-slate-900">Khaled Gamal Seif</span>
+                <span class="hidden sm:inline text-slate-300">•</span>
+                <span class="text-slate-500">Offensive Security Engineer & Penetration Testing</span>
             </div>
+
+            <!-- Middle / Social Media SVG Icons -->
+            <div class="flex items-center gap-5">
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                   class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
+                    </svg>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/sirRootfire" target="_blank" rel="noopener noreferrer" title="GitHub"
+                   class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                    </svg>
+                </a>
+
+                <!-- HackerOne -->
+                <a
+                  href="https://hackerone.com/sittootfire"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="HackerOne"
+                  aria-label="HackerOne Profile"
+                  class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200"
+                >
+                <img
+                  src="https://cdn.simpleicons.org/hackerone"
+                  alt="HackerOne"
+                  class="w-5 h-5"
+                />
+                </a>
+
+
+                <!-- X (Twitter) -->
+                <a href="https://x.com/SirRootfire" target="_blank" rel="noopener noreferrer" title="X (Twitter)"
+                   class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
+                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Right Copyright -->
+            <div class="text-xs text-slate-400 font-medium text-center sm:text-right">
+                © 2026 Khaled Gamal Seif. All rights reserved.
+            </div>
+
         </div>
     </footer>
-
-    <!-- Tab Switching Script -->
     <script>
         function switchTab(tabName) {
-            const tabs = ['pentest', 'tools', 'dev'];
+            const tabs = ['webapi', 'networkad', 'tools', 'systems'];
+            
             tabs.forEach(t => {
-                document.getElementById('tab-' + t).classList.add('hidden');
-                document.getElementById('tab-btn-' + t).classList.remove('border-indigo-600', 'text-indigo-600');
-                document.getElementById('tab-btn-' + t).classList.add('border-transparent', 'text-slate-500');
+                const contentEl = document.getElementById('tab-' + t);
+                const btnEl = document.getElementById('tab-btn-' + t);
+                
+                if (contentEl && btnEl) {
+                    contentEl.classList.add('hidden');
+                    btnEl.classList.remove('border-indigo-600', 'text-indigo-600');
+                    btnEl.classList.add('border-transparent', 'text-slate-500');
+                }
             });
-            document.getElementById('tab-' + tabName).classList.remove('hidden');
-            document.getElementById('tab-btn-' + tabName).classList.add('border-indigo-600', 'text-indigo-600');
-            document.getElementById('tab-btn-' + tabName).classList.remove('border-transparent', 'text-slate-500');
+
+            const activeContent = document.getElementById('tab-' + tabName);
+            const activeBtn = document.getElementById('tab-btn-' + tabName);
+            
+            if (activeContent && activeBtn) {
+                activeContent.classList.remove('hidden');
+                activeBtn.classList.add('border-indigo-600', 'text-indigo-600');
+                activeBtn.classList.remove('border-transparent', 'text-slate-500');
+            }
         }
+
         function toggleOtherInput(selectedValue) {
             const otherContainer = document.getElementById('other-input-container');
             const otherInput = document.getElementById('other-service-input');
@@ -365,6 +614,19 @@
                 otherInput.value = '';
             }
         }
+        function selectService(serviceValue) {
+        const selectElement = document.getElementById('service-type-select');
+        if (selectElement) {
+            selectElement.value = serviceValue;
+            
+            toggleOtherInput(serviceValue);
+
+            selectElement.classList.add('ring-2', 'ring-indigo-600');
+            setTimeout(() => {
+                selectElement.classList.remove('ring-2', 'ring-indigo-600');
+            }, 1200);
+        }
+    }
     </script>
 </body>
 </html>
