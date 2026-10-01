@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penetration Tester & Security Research | Khaled Gamal Seif </title>
-    <meta name="description" content="Freelance Penetration Tester specializing in Web Applications, APIs, Internal Networks, and Active Directory security assessments.">
+    <title>Khaled Gamal Seif | Linux System Administrator & Infrastructure Security</title>
+    <meta name="description" content="Freelance Linux System Administrator specializing in Enterprise RHEL/Debian environments, Zero-Trust OS Hardening, Bash Automation, and Container Deployments.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -15,7 +15,6 @@
         body { 
             font-family: 'Inter', sans-serif; 
         }
-        /* Smooth transitions for tabs and active elements */
         .tab-indicator-active {
             border-color: #4f46e5;
             color: #4f46e5;
@@ -24,7 +23,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white min-h-screen flex flex-col justify-between">
 
-<!-- Top Navigation Bar -->
+    <!-- Top Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="h-16 flex items-center justify-between">
@@ -38,27 +37,28 @@
                         <span class="font-extrabold text-lg sm:text-xl tracking-tight text-slate-900 group-hover:text-indigo-600 transition block leading-tight">
                             Khaled Gamal Seif
                         </span>
-                        <span class="text-xs text-slate-400 font-mono block">@SirRootfire</span>
+                        <span class="text-xs text-slate-400 font-mono block">@SirRootfire • Linux Admin</span>
                     </div>
                 </a>
                 
-                <!-- Desktop Navigation Links (Aligned to Far Right) -->
-                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-6 text-sm font-medium text-slate-600">
                     <a href="#about" class="hover:text-indigo-600 transition">About</a>
-                    <a href="#skills" class="hover:text-indigo-600 transition">Technical Matrix</a>
+                    <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
                     <a href="#services" class="hover:text-indigo-600 transition">Services</a>
-                    <a href="#work" class="hover:text-indigo-600 transition">Selected Work</a>
+                    <a href="#experience" class="hover:text-indigo-600 transition">Experience</a>
+                    <a href="#work" class="hover:text-indigo-600 transition">Projects</a>
+                    <a href="#education" class="hover:text-indigo-600 transition">Education</a>
+                    <a href="#testimonials" class="hover:text-indigo-600 transition">Testimonials</a>
                     <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
                 </div>
 
-                <!-- Mobile Hamburger Button (Hidden on Desktop) -->
-                <div class="md:hidden flex items-center">
+                <!-- Mobile Hamburger Button -->
+                <div class="lg:hidden flex items-center">
                     <button onclick="toggleMobileMenu()" id="mobile-menu-btn" aria-label="Toggle menu" class="p-2 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
-                        <!-- Icon Open (Hamburger) -->
                         <svg id="menu-icon-bars" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
-                        <!-- Icon Close (X) -->
                         <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
@@ -69,16 +69,19 @@
         </div>
 
         <!-- Mobile Dropdown Menu -->
-        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-100 bg-white/95 backdrop-blur-md px-4 pt-3 pb-5 space-y-2 shadow-lg">
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white/95 backdrop-blur-md px-4 pt-3 pb-5 space-y-2 shadow-lg">
             <a href="#about" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">About</a>
-            <a href="#skills" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Technical Matrix</a>
+            <a href="#skills" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Skills</a>
             <a href="#services" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Services</a>
-            <a href="#work" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Selected Work</a>
+            <a href="#experience" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Experience</a>
+            <a href="#work" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Projects</a>
+            <a href="#education" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Education</a>
+            <a href="#testimonials" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Testimonials</a>
             <a href="#contact" onclick="closeMobileMenu()" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-indigo-600 hover:bg-slate-50 transition">Contact</a>
         </div>
     </nav>
 
-
+    <!-- SECTION 01: COVER / HERO -->
     <header class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 md:pt-12 pb-0">
         <div class="flex flex-col md:flex-row items-center md:items-end justify-between gap-6">
             
@@ -86,36 +89,36 @@
             <div class="w-full md:max-w-2xl lg:max-w-3xl pb-8 md:pb-12 text-center md:text-left z-10">
                 <div class="inline-flex items-center gap-2 py-1.5 px-3.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 mb-4 tracking-wide">
                     <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                    Available for Security Audits, Pentests & Red Teaming
+                    Available for Server Deployments, Linux Hardening & Automation
                 </div>
                 
                 <p class="text-slate-500 text-sm md:text-base font-medium mb-2">
                     Hi, my name is Khaled Gamal Seif <span class="text-indigo-600 font-mono font-semibold">(@SirRootfire)</span>
                 </p>
 
-                <h1 class="text-4xl sm:text-5xl lg:text-[54px] font-extrabold text-slate-900 tracking-tight leading-[1.12]">
-                    Freelance Penetration Tester & Security Research
+                <h1 class="text-4xl sm:text-5xl lg:text-[52px] font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+                    Linux System Administrator & Infrastructure Security
                 </h1>
                 
                 <p class="mt-4 text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl">
-                    I uncover attack vectors across <strong class="text-slate-900 font-semibold">Web Applications, APIs, Internal Networks, and Active Directory</strong> environments—identifying deep business logic flaws, lateral movement paths, and misconfigurations before malicious adversaries strike.
+                    I architect resilient Linux environments that guarantee <strong class="text-slate-900 font-semibold">99.9% uptime, strict OS-level hardening, and zero-loss disaster recovery</strong>. Bridging system administration with offensive security awareness to eliminate misconfigurations before production impact.
                 </p>
                 
                 <!-- CTA Buttons -->
                 <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                     <a href="#contact" class="inline-flex justify-center items-center px-7 py-3.5 border border-transparent text-base font-semibold rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 shadow-md transition">
-                        Request a Security Audit
+                        Deploy / Harden My Servers
                     </a>
-                    <a href="#about" class="inline-flex justify-center items-center px-7 py-3.5 border border-slate-300 text-base font-semibold rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition shadow-sm">
-                        FIND OUT MORE
+                    <a href="#work" class="inline-flex justify-center items-center px-7 py-3.5 border border-slate-300 text-base font-semibold rounded-lg text-slate-700 bg-white hover:bg-slate-50 transition shadow-sm">
+                        View Case Studies
                     </a>
                 </div>
             </div>
 
-            <!-- Right Profile Image: Flush to bottom shelf line -->
+            <!-- Right Profile Image -->
             <div class="w-full md:w-[480px] lg:w-[540px] shrink-0 flex justify-center md:justify-end -mb-[1px]">
                 <img src="./portfolio.png" 
-                     alt="Khaled Gamal Seif - Security Consultant" 
+                     alt="Khaled Gamal Seif - Linux System Administrator" 
                      class="w-full h-auto max-h-[520px] object-contain object-bottom block"
                      onerror="this.onerror=null; this.src='https://placehold.co/520x520/e2e8f0/475569?text=Khaled+Gamal+Seif';">
             </div>
@@ -123,354 +126,501 @@
         </div>
     </header>
 
+    <!-- Key Metrics / Capabilities Ticker -->
     <div class="border-t border-b border-slate-200 bg-white py-4 shadow-sm relative z-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-center md:justify-between items-center gap-y-3 gap-x-8 text-xs sm:text-sm font-semibold text-slate-700">
             <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-indigo-600"></span>
-                <span>Web Application Pentesting (OWASP Top 10)</span>
+                <span>Enterprise Linux (RHEL, Rocky, Debian)</span>
             </div>
             <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-cyan-600"></span>
-                <span>API Security & Token Flow Audits</span>
+                <span>Zero-Trust Hardening (SELinux & Firewalld)</span>
             </div>
             <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
-                <span>External & Internal Network Pentesting</span>
+                <span>Bash Automation & Cron Orchestration</span>
             </div>
             <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-amber-600"></span>
-                <span>Active Directory & Lateral Movement</span>
+                <span>Containerized Workloads (Docker & Podman)</span>
             </div>
         </div>
     </div>
 
+    <!-- Institutional Badges -->
     <div class="border-b border-slate-200 bg-slate-50/80 py-5">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 flex flex-wrap justify-center md:justify-around items-center gap-6 text-slate-400 font-bold text-xs sm:text-sm tracking-wider uppercase">
-            <span class="hover:text-slate-600 transition">HACK THE BOX (CRTP)</span>
-            <span class="hover:text-slate-600 transition">INFORMATION TECHNOLOGY INSTITUTE (ITI)</span>
+            <span class="hover:text-slate-600 transition">RED HAT ENTERPRISE LINUX (NTI)</span>
             <span class="hover:text-slate-600 transition">DIGITAL EGYPT PIONEERS (DEPI)</span>
-            <span class="hover:text-slate-600 transition">NATIONAL TELECOM INSTITUTE (NTI)</span>
+            <span class="hover:text-slate-600 transition">INFORMATION TECHNOLOGY INSTITUTE (ITI)</span>
+            <span class="hover:text-slate-600 transition">HACK THE BOX ACADEMY</span>
         </div>
     </div>
 
-    <!-- About Section (Gajdos-style Value & Story) -->
-    <section id="about" class="py-20 bg-white border-t border-slate-200">
+    <!-- SECTION 02: ABOUT ME -->
+    <section id="about" class="py-20 bg-white border-b border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            
             <div class="flex items-center gap-3 mb-4">
-                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest">About Me</h2>
+                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest">02. About Me</h2>
             </div>
 
-            <!-- Main Narrative -->
             <div class="space-y-5 text-slate-600 text-lg leading-relaxed font-normal">
                 <p>
-                    I am <span class="font-semibold text-slate-900">Khaled Gamal Seif (@sirrootfire)</span>, a penetration tester and security researcher. Automated tools often scan for surface-level signatures while missing deep architectural flaws. My approach focuses on practical impact and adversary simulation—breaking perimeters the way real attackers do so you can remediate them before a breach occurs.
+                    I am <span class="font-semibold text-slate-900">Khaled Gamal Seif (@sirrootfire)</span>, a Linux System Administrator focused on building stable, highly-available, and security-hardened production infrastructure. Server reliability is not accidental—it is the result of disciplined system configuration, zero-trust permission models, and continuous automated maintenance.
                 </p>
                 <p>
-                    My offensive assessments span web applications (with an emphasis on broken access control, IDOR, and business logic bypasses), internal network penetration, and <span class="font-medium text-slate-800">Active Directory attack paths</span> such as domain privilege escalation and lateral movement.
+                    With hands-on proficiency across Enterprise Linux ecosystems (<span class="font-medium text-slate-800">RHEL, Rocky, AlmaLinux, Fedora, and Debian/Ubuntu Server</span>), I specialize in eliminating service vulnerabilities at the OS layer. My offensive security background allows me to configure defenses with attacker-perspective insights—rigorously tuning <code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">SELinux</code> policies, orchestrating stateful <code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">Firewalld</code> zones, implementing resilient storage structures (<code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">LVM</code> &amp; <code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">Btrfs</code> snapshots), and deploying containerized services.
                 </p>
                 <p>
-                  By combining offensive tooling (<code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">Burp Suite</code>, <code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">BloodHound</code>, <code class="text-sm md:text-base font-mono font-medium bg-slate-100 text-indigo-700 px-2 py-1 rounded-md border border-slate-200">Impacket</code>) with custom Python/Bash scripting and solid Linux fundamentals, I ensure you receive actionable, proof-of-concept-backed reports rather than generic scanner noise.
+                    Whether configuring high-performance Nginx reverse proxies, scripting automated disaster recovery pipelines in Bash, or maintaining zero-downtime server migrations, my objective is simple: ensure your infrastructure runs fast, securely, and without disruption 24/7.
                 </p>
-              </div>
-
+            </div>
         </div>
     </section>
 
-    <section id="skills" class="py-16 bg-white border-t border-b border-slate-200">
+    <!-- SECTION 04: SKILLS (Interactive Tabbed Matrix) -->
+    <section id="skills" class="py-16 bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center md:text-left mb-8">
-                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Technical Capabilities</h2>
-                <h3 class="text-3xl font-bold text-slate-900">Offensive Tooling & Core Competencies</h3>
+                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">04. Technical Capabilities</h2>
+                <h3 class="text-3xl font-bold text-slate-900">Infrastructure Skills & Core Competencies</h3>
             </div>
 
             <!-- Tab Navigation -->
             <div class="flex overflow-x-auto border-b border-slate-200 mb-8 space-x-6 text-sm font-semibold pb-1 scrollbar-none">
-                <button onclick="switchTab('webapi')" id="tab-btn-webapi" class="pb-3 border-b-2 border-indigo-600 text-indigo-600 focus:outline-none whitespace-nowrap">
-                    Web & API Security
+                <button onclick="switchTab('distros')" id="tab-btn-distros" class="pb-3 border-b-2 border-indigo-600 text-indigo-600 focus:outline-none whitespace-nowrap">
+                    Linux Distros & Storage
                 </button>
-                <button onclick="switchTab('networkad')" id="tab-btn-networkad" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
-                    Network & Active Directory
+                <button onclick="switchTab('hardening')" id="tab-btn-hardening" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
+                    Security & Hardening
                 </button>
-                <button onclick="switchTab('tools')" id="tab-btn-tools" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
-                    Offensive Tooling
+                <button onclick="switchTab('networking')" id="tab-btn-networking" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
+                    Networking & Web Servers
                 </button>
-                <button onclick="switchTab('systems')" id="tab-btn-systems" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
-                    Systems & Automation
+                <button onclick="switchTab('automation')" id="tab-btn-automation" class="pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 focus:outline-none whitespace-nowrap">
+                    Automation & Containers
                 </button>
             </div>
 
-            <!-- Tab 1: Web & API Security -->
-            <div id="tab-webapi" class="grid sm:grid-cols-2 gap-4">
+            <!-- Tab 1: Distros & Storage -->
+            <div id="tab-distros" class="grid sm:grid-cols-2 gap-4">
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> OWASP Top 10 Manual Testing
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Enterprise Linux Ecosystems
                     </h4>
-                    <p class="text-sm text-slate-600">Deep manual inspection covering Injection (SQLi/Command), SSRF, Broken Authentication, Cross-Site Scripting (XSS), and CORS misconfigurations.</p>
+                    <p class="text-sm text-slate-600">Red Hat Enterprise Linux (RHEL), Rocky Linux, AlmaLinux, Fedora, CentOS Stream, Debian, and Ubuntu Server administration.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> IDOR & Authorization Logic
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Advanced Storage (LVM & Btrfs)
                     </h4>
-                    <p class="text-sm text-slate-600">Exhaustive testing for Broken Object Level Authorization (BOLA/IDOR), multi-tenant isolation breaches, and horizontal/vertical privilege escalations.</p>
+                    <p class="text-sm text-slate-600">Logical Volume Management (LVM), dynamic volume resizing, subvolume allocation, Btrfs snapshots, and quotas.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> API & Microservices Auditing
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Full-Disk Encryption & LUKS
                     </h4>
-                    <p class="text-sm text-slate-600">REST & GraphQL endpoint probing, mass assignment, JWT token manipulation, header injection, and rate-limiting bypasses.</p>
+                    <p class="text-sm text-slate-600">Data-at-rest protection with LUKS encryption, key management, cryptsetup maintenance, and secure bootloader configurations.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Business Logic Flaws
+                        <span class="w-2 h-2 rounded-full bg-indigo-600"></span> Kernel Tuning & File Systems
                     </h4>
-                    <p class="text-sm text-slate-600">Analyzing custom workflows such as checkout flows, password resets, coupon exploits, and race conditions that bypass static defenses.</p>
-                </div>
-            </div>
-
-            <!-- Tab 2: Network & Active Directory -->
-            <div id="tab-networkad" class="hidden grid sm:grid-cols-2 gap-4">
-                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Active Directory Domain Exploitation
-                    </h4>
-                    <p class="text-sm text-slate-600">Identification of abuse paths using BloodHound, Kerberoasting service accounts, AS-REP Roasting, DCSync, and ACL misconfigurations.</p>
-                </div>
-                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Lateral Movement & Credential Dumping
-                    </h4>
-                    <p class="text-sm text-slate-600">NTLM relay techniques, Pass-the-Hash / Pass-the-Ticket, token manipulation, and exploiting unconstrained delegation vectors.</p>
-                </div>
-                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> External Perimeter Audits
-                    </h4>
-                    <p class="text-sm text-slate-600">Mapping internet-facing IP ranges, VPN gateways, firewall rule verification, and fingerprinting exposed obsolete software services.</p>
-                </div>
-                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
-                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Internal Network Segmentation
-                    </h4>
-                    <p class="text-sm text-slate-600">Subnet enumeration, assessing VLAN isolation, rogue DHCP detection, and inspecting unencrypted internal management protocols.</p>
+                    <p class="text-sm text-slate-600">Sysctl parameters optimization, Ext4/XFS filesystem maintenance, fsck repairs, and swap management.</p>
                 </div>
             </div>
 
-            <!-- Tab 3: Offensive Tooling -->
-            <div id="tab-tools" class="hidden grid sm:grid-cols-2 gap-4">
+            <!-- Tab 2: Security & Hardening -->
+            <div id="tab-hardening" class="hidden grid sm:grid-cols-2 gap-4">
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Web & API Proxy Suites
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> SELinux Enforcing Mode
                     </h4>
-                    <p class="text-sm text-slate-600">Burp Suite Professional, OWASP ZAP, Caido, Postman, Turbo Intruder, and custom BPython extensions.</p>
+                    <p class="text-sm text-slate-600">Policy management, context relabeling (semanage/restorecon), boolean adjustments, and audit log troubleshooting.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Recon & Content Discovery
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Stateful Firewalls (Firewalld / iptables)
                     </h4>
-                    <p class="text-sm text-slate-600">ffuf, katana, amass, subfinder, httpx, nmap, masscan, and dirsearch for comprehensive asset enumeration.</p>
+                    <p class="text-sm text-slate-600">Zone-based filtering, rich rules, port forwarding, NAT masquerading, and UFW rule structuring.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Active Directory & Credential Toolkits
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> SSH Hardening & PAM Security
                     </h4>
-                    <p class="text-sm text-slate-600">Impacket framework, BloodHound / SharpHound, Responder, CrackMapExec / NetExec, Mimikatz, and Rubeus.</p>
+                    <p class="text-sm text-slate-600">Root login lockdown, ed25519 key-only authentication, port changes, PAM module restrictions, and sudo privileges auditing.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Network & Traffic Analysis
+                        <span class="w-2 h-2 rounded-full bg-amber-600"></span> Intrusion Prevention & Auditing
                     </h4>
-                    <p class="text-sm text-slate-600">Wireshark, Metasploit Framework, tcpdump, and SNMP/SMB auditing utilities.</p>
+                    <p class="text-sm text-slate-600">Fail2ban jail setups for brute-force prevention, Linux audit daemon (auditd) rules, and CIS-benchmark hardening.</p>
                 </div>
             </div>
 
-            <!-- Tab 4: Systems & Automation -->
-            <div id="tab-systems" class="hidden grid sm:grid-cols-2 gap-4">
+            <!-- Tab 3: Networking & Web Servers -->
+            <div id="tab-networking" class="hidden grid sm:grid-cols-2 gap-4">
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Linux & Windows Administration
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Nginx & Apache Reverse Proxies
                     </h4>
-                    <p class="text-sm text-slate-600">Red Hat Enterprise Linux (NTI certified track), Debian/Kali environments, system hardening, and Windows Server internals.</p>
+                    <p class="text-sm text-slate-600">High-throughput reverse proxies, load balancing, SSL/TLS termination, HTTP/2 enforcement, and WebSocket handling.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Custom Exploit & Recon Scripting
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Network Core Services (DNS / DHCP / NTP)
                     </h4>
-                    <p class="text-sm text-slate-600">Python 3 exploit crafting, Bash pipeline automation, PowerShell for Active Directory enumeration, and regex data extraction.</p>
+                    <p class="text-sm text-slate-600">BIND DNS server configurations, Chrony/NTP time sync, static IP mapping with NetworkManager (nmcli), and IP subnetting.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Development Stack Understanding
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> Secure VPN Tunneling (WireGuard)
                     </h4>
-                    <p class="text-sm text-slate-600">JavaScript/Node.js, PHP, HTML5/CSS3, SQL, and Git repository auditing to facilitate developer-level remediation advice.</p>
+                    <p class="text-sm text-slate-600">Point-to-point and road-warrior WireGuard mesh deployments for encrypted server management channels.</p>
                 </div>
                 <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
                     <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Security Reporting & Verification
+                        <span class="w-2 h-2 rounded-full bg-cyan-600"></span> File Sharing (NFS / Samba)
                     </h4>
-                    <p class="text-sm text-slate-600">Writing CVSS-scored, executive-ready, and developer-actionable security reports accompanied by structured patch validation.</p>
+                    <p class="text-sm text-slate-600">Cross-platform storage mounts, NFS export permissions, and Active Directory-integrated Samba shares.</p>
+                </div>
+            </div>
+
+            <!-- Tab 4: Automation & Containers -->
+            <div id="tab-automation" class="hidden grid sm:grid-cols-2 gap-4">
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Bash Automation & Scripting
+                    </h4>
+                    <p class="text-sm text-slate-600">Idempotent Bash maintenance pipelines, automated log rotation, health checks, and alerting scripts.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Systemd Service Engineering
+                    </h4>
+                    <p class="text-sm text-slate-600">Custom systemd unit creation, timer jobs replacing cron, cgroups resource throttling, and daemon sandboxing.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Docker & Podman Workloads
+                    </h4>
+                    <p class="text-sm text-slate-600">Rootless Podman containers, Docker Compose multi-tier setups, Distrobox isolated dev environments, and bridge networks.</p>
+                </div>
+                <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                    <h4 class="font-bold text-slate-900 mb-1 flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-emerald-600"></span> Observability & Log Analysis
+                    </h4>
+                    <p class="text-sm text-slate-600">Journalctl query analysis, performance metrics diagnosis (top, iotop, sysstat/sar, netstat), and disk monitoring.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- SECTION 06: OFFERED SERVICES -->
     <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest">Service Offerings</span>
+            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest">06. Service Offerings</span>
             <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-2">
-                Specialized Offensive Security Engagements
+                Linux Systems & Infrastructure Solutions
             </h3>
             <p class="text-slate-600 text-base max-w-2xl mx-auto mt-4">
-                Tailored security testing models designed to address risks at the application layer, infrastructure layer, and enterprise identity level.
+                High-availability server deployment, security hardening, and operational automation tailored for startups, web agencies, and growing dev teams.
             </p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- 01: Web & API -->
+            <!-- 01: Server Deployment -->
             <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
                 <div>
-                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">01. Web & API</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Web & API Penetration Testing</h4>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">01. Deployment</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Linux Server Setup & Proxying</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Comprehensive manual assessments covering the complete OWASP Top 10, multi-tenant BOLA/IDOR flaws, and business logic bypasses.
+                        End-to-end setup of production RHEL/Ubuntu VPS nodes, Nginx reverse proxy configuration, and Let's Encrypt automated SSL termination.
                     </p>
                 </div>
-                <a href="#contact" onclick="selectService('Web & API Pentest')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                <a href="#contact" onclick="selectService('Linux Server Deployment')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
                     Book Service <span>→</span>
                 </a>
             </div>
 
-            <!-- 02: Active Directory (Removed High Demand badge & border) -->
+            <!-- 02: Hardening & Security -->
             <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
                 <div>
-                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">02. Identity & Domain</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Active Directory & Internal Pentest</h4>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">02. Hardening</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Zero-Trust OS Hardening</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Auditing enterprise Windows domains for privilege escalation, Kerberoasting, weak ACLs, and lateral movement leading to Domain Admin.
+                        CIS-benchmark security baselines, targeted SELinux policies, strict Firewalld rule sets, Fail2ban integration, and rootless SSH lockdown.
                     </p>
                 </div>
-                <a href="#contact" onclick="selectService('Active Directory Pentest')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                <a href="#contact" onclick="selectService('OS Hardening & Security')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
                     Book Service <span>→</span>
                 </a>
             </div>
 
-            <!-- 03: Infrastructure -->
+            <!-- 03: Disaster Recovery -->
             <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
                 <div>
-                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">03. Infrastructure</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Network Perimeter Auditing</h4>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">03. Storage & DR</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Automated Backup & Recovery</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Scanning external attack surfaces, identifying exposed services, outdated daemons, misconfigured firewalls, and leaky subnets.
+                        Btrfs/LVM snapshot engineering, automated encrypted offsite sync, cron health verification, and non-disruptive storage scaling.
                     </p>
                 </div>
-                <a href="#contact" onclick="selectService('Network Pentest')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                <a href="#contact" onclick="selectService('Backup & Disaster Recovery')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
                     Book Service <span>→</span>
                 </a>
             </div>
 
-            <!-- 04: Consultation -->
+            <!-- 04: Containers -->
             <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between hover:shadow-md hover:border-slate-300 transition duration-200">
                 <div>
-                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">04. Consultation</span>
-                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Remediation & Patch Verification</h4>
+                    <span class="text-xs font-bold font-mono text-indigo-600 tracking-wider uppercase">04. Virtualization</span>
+                    <h4 class="text-xl font-bold text-slate-900 mt-2 mb-3">Containerized Deployments</h4>
                     <p class="text-slate-600 text-sm leading-relaxed">
-                        Step-by-step guidance for your developers to address root causes, followed by rigorous re-testing to certify fixes.
+                        Transitioning bare-metal services into Docker / Podman stacks with isolated bridges, volume persistence, and systemd integration.
                     </p>
                 </div>
-                <a href="#contact" onclick="selectService('Remediation & Re-test')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
+                <a href="#contact" onclick="selectService('Containerization (Docker/Podman)')" class="mt-8 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-800 transition">
                     Book Service <span>→</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="work" class="py-20 bg-slate-100/80 border-t border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6">
-            <div class="text-center md:text-left mb-12">
-                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">Selected Work</h2>
-                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Documented Security Case Studies</h3>
-                <p class="text-slate-600 mt-2 text-sm sm:text-base">Demonstrating practical assessment scenarios across applications, networks, and domain architectures.</p>
+    <!-- SECTION 05: WORK EXPERIENCE -->
+    <section id="experience" class="py-16 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center gap-3 mb-8">
+                <div>
+                    <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest">05. Professional Experience</h2>
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Practical Roles & Infrastructure Deployments</h3>
+                </div>
             </div>
 
             <div class="space-y-6">
-                <!-- Case 1: Web & API -->
+                <!-- Role 1 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h4 class="text-lg font-bold text-slate-900">Freelance Linux Systems Administrator</h4>
+                        <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full w-fit">2024 – Present</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-500 mb-3">Independent Consultant • Remote</p>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Provisioned and maintained cloud VPS servers (RHEL, Debian, Ubuntu) for client web platforms.</li>
+                        <li>Configured secure Nginx reverse proxies with automatic Let's Encrypt renewal, decreasing TLS handshake latency.</li>
+                        <li>Designed automated Bash backup scripts with GPG encryption, reducing recovery point objectives (RPO) to under 2 hours.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h4 class="text-lg font-bold text-slate-900">Enterprise Linux System Engineer Trainee</h4>
+                        <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full w-fit">2024 – 2025</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-500 mb-3">National Telecom Institute (NTI) • Egypt</p>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Extensive hands-on lab deployments aligned with Red Hat Certified System Administrator (RHCSA) domains.</li>
+                        <li>Managed LVM thin-provisioning, filesystem repair routines, user/group permission architectures, and PAM modules.</li>
+                        <li>Configured and hardened internal network daemons including BIND DNS, Chrony, OpenSSH, and Firewalld.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 07: SELECTED WORK / CASE STUDIES (Heart of Portfolio) -->
+    <section id="work" class="py-20 bg-slate-100/80 border-t border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center md:text-left mb-12">
+                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">07. Selected Work</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Documented Infrastructure Case Studies</h3>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Real-world system implementations detailing the architectural challenge, engineering solution, and measurable business impact.</p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Case 1: Server Hardening -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
                     <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-                        <h4 class="text-xl font-bold text-slate-900">Multi-Tenant Web Application Authorization & IDOR Assessment</h4>
-                        <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">Web & API</span>
+                        <h4 class="text-xl font-bold text-slate-900">Zero-Trust Production Linux Server Hardening</h4>
+                        <span class="bg-amber-50 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Security Hardening</span>
                     </div>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Audited an authenticated SaaS platform with multi-tenant user hierarchies. Identified critical Broken Object Level Authorization (IDOR) flaws within backend REST endpoints that allowed tenant data exfiltration across account boundaries. Provided detailed HTTP request/response proofs-of-concept and worked directly with engineers to implement secure tenant-scoped database query filters.
+                        <strong class="text-slate-800">Challenge:</strong> An internet-facing RHEL enterprise node experienced over 1,500 daily automated brute-force SSH attacks, with exposed unnecessary network ports and permissive default access.<br>
+                        <strong class="text-slate-800">Solution:</strong> Implemented CIS-benchmark hardening: enforced SELinux in targeted mode, reconfigured OpenSSH to accept only Ed25519 public keys on custom ports, structured segmented firewalld zones, and deployed Fail2ban jails with automatic IP banning. Verified all rules using Nmap and system audit logs.<br>
+                        <strong class="text-slate-800">Result:</strong> Reduced unauthorized connection attempts to zero, eliminated plain-text password vectors, and established full compliance with security best practices.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Burp Suite Pro</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">BOLA / IDOR</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">REST API</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Developer Remediation</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">RHEL / Rocky Linux</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">SELinux Enforcing</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Firewalld</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Fail2ban</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">SSH Hardening</span>
                     </div>
                 </div>
 
-                <!-- Case 2: Active Directory -->
+                <!-- Case 2: Backup & DR Automation -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
                     <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-                        <h4 class="text-xl font-bold text-slate-900">Active Directory Domain Compromise & Lateral Movement Simulation</h4>
-                        <span class="bg-amber-50 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Active Directory</span>
+                        <h4 class="text-xl font-bold text-slate-900">Automated Disaster Recovery & Btrfs/LVM Snapshot Pipeline</h4>
+                        <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">Automation & Storage</span>
                     </div>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Executed an assumed-breach assessment starting from a non-privileged domain user. Utilized BloodHound to map shortest attack paths, extracted TGS tickets via Kerberoasting, cracked weak service account hashes offline, and leveraged excessive WriteDacl rights on an IT admin group to achieve full Domain Admin persistence and extract NTDS.dit safely in a controlled lab audit.
+                        <strong class="text-slate-800">Challenge:</strong> A critical staging environment suffered from inconsistent manual backup practices, putting client configurations and database dumps at risk of corruption.<br>
+                        <strong class="text-slate-800">Solution:</strong> Engineered an automated Bash pipeline integrated with Btrfs snapshot management and Rsync. The workflow triggers atomic snapshots, creates GPG-encrypted tarballs, offloads archives to a remote backup destination, and cleans up older snapshots via an intelligent retention policy run by systemd timers.<br>
+                        <strong class="text-slate-800">Result:</strong> Achieved a verifiable 15-minute Recovery Time Objective (RTO) and successfully recovered system states during dry-run disaster drill tests without losing a single file.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">BloodHound</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Kerberoasting</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Impacket</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Privilege Escalation</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Bash Scripting</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Btrfs Subvolumes</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">GPG Encryption</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Systemd Timers</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Disaster Recovery</span>
                     </div>
                 </div>
 
-                <!-- Case 3: Network Infrastructure -->
+                <!-- Case 3: Containerized Architecture -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
                     <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-                        <h4 class="text-xl font-bold text-slate-900">Perimeter Reconnaissance & Vulnerable Service Hardening</h4>
-                        <span class="bg-emerald-50 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Network Security</span>
+                        <h4 class="text-xl font-bold text-slate-900">Isolated Multi-Container Web Architecture Deployment</h4>
+                        <span class="bg-cyan-50 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">Virtualization</span>
                     </div>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Conducted an external attack surface reconnaissance across an organization's public IP subnets. Identified unpatched remote services, leaky SNMP community strings, and misconfigured port forwardings that bypassed perimeter stateful firewalls. Authored an executive summary along with strict iptables and service-decommissioning policies.
+                        <strong class="text-slate-800">Challenge:</strong> Client required migrating multiple independent PHP/Node web apps onto a single Linux VPS without package conflicts, port collisions, or privilege escalations.<br>
+                        <strong class="text-slate-800">Solution:</strong> Deployed rootless Podman/Docker containers orchestrated via Compose. Isolated each app into private software bridges, placed them behind a unified Nginx Reverse Proxy with automated SSL certificates, and locked down container resource limits via cgroups.<br>
+                        <strong class="text-slate-800">Result:</strong> Reduced server memory footprint by 35% compared to multi-VM configurations while providing complete tenant process isolation and zero-downtime service reboots.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Nmap Scripting Engine</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Wireshark</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">SNMP Auditing</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Firewall Hardening</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Docker Compose</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Podman Rootless</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Nginx Reverse Proxy</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">SSL/TLS</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Bridge Networks</span>
                     </div>
                 </div>
 
-                <!-- Case 4: Automation & Tooling -->
+                <!-- Case 4: Storage & LUKS -->
                 <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
                     <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
-                        <h4 class="text-xl font-bold text-slate-900">Custom Automated Asset Discovery & Endpoint Fuzzing Engine</h4>
-                        <span class="bg-cyan-50 text-cyan-800 text-xs font-bold px-3 py-1 rounded-full">Offensive Tooling</span>
+                        <h4 class="text-xl font-bold text-slate-900">Encrypted Storage Architecture & LVM Partition Management</h4>
+                        <span class="bg-emerald-50 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Storage Engineering</span>
                     </div>
                     <p class="text-slate-600 text-sm mb-4 leading-relaxed">
-                        Engineered a modular Python and Bash reconnaissance pipeline integrating multiple passive sub-domain aggregators, live host resolution, and selective ffuf path fuzzing. Built to streamline fast surface enumeration on large-scope bug bounties and corporate assessment engagements.
+                        <strong class="text-slate-800">Challenge:</strong> A multi-user workstation and server setup required dynamic disk repartitioning and data-at-rest encryption to comply with strict internal security regulations.<br>
+                        <strong class="text-slate-800">Solution:</strong> Re-engineered disk partitioning using LUKS2 full-disk encryption layered underneath Logical Volume Management (LVM). Tuned file system mount flags for performance and quota segregation, and resolved low-level filesystem recovery issues across Btrfs subvolumes in live environments.<br>
+                        <strong class="text-slate-800">Result:</strong> 100% data-at-rest protection against unauthorized hardware removal with flexible live storage expansion capabilities.
                     </p>
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Python 3</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Bash Automation</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">ffuf / httpx</span>
-                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Recon Pipeline</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">LVM</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">LUKS2 Encryption</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Cryptsetup</span>
+                        <span class="bg-slate-100 px-2.5 py-1 rounded-md">Btrfs Subvolumes</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SECTION 03 & 08: EDUCATION & ACHIEVEMENTS -->
+    <section id="education" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <!-- 03. Education -->
+                <div>
+                    <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">03. Education</h2>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Academic Background</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-900">B.Sc. in Cybersecurity & Software Security</h4>
+                            <p class="text-sm text-slate-500 mb-2">Faculty of Computers & Artificial Intelligence • Beni Suef University</p>
+                            <p class="text-xs text-slate-600 leading-relaxed">Rigorous studies in operating systems internals, computer networks, Linux systems architecture, and cryptographic protocols.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 08. Achievements & Recognitions -->
+                <div>
+                    <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">08. Recognitions</h2>
+                    <h3 class="text-2xl font-bold text-slate-900 mb-6">Certifications & Achievements</h3>
+                    
+                    <div class="space-y-4">
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-900">NTI Enterprise Linux Specialization</h4>
+                            <p class="text-sm text-slate-500 mb-1">National Telecom Institute (NTI)</p>
+                            <p class="text-xs text-slate-600">Comprehensive enterprise training covering RHEL system administration, network services, and security hardening.</p>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-900">Digital Egypt Pioneers Initiative (DEPI)</h4>
+                            <p class="text-sm text-slate-500 mb-1">Ministry of Communications & Information Technology (MCIT)</p>
+                            <p class="text-xs text-slate-600">Selected for professional freelancing and technical infrastructure tracks.</p>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-900">Practical Wargames & Lab Completions</h4>
+                            <p class="text-sm text-slate-500 mb-1">OverTheWire Bandit & Hack The Box Academy</p>
+                            <p class="text-xs text-slate-600">Hands-on mastery of Bash scripting, network protocols, privilege escalation, and Active Directory internals.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 09: TESTIMONIALS (Social Proof in Andrej Gajdos Style) -->
+    <section id="testimonials" class="py-20 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">09. Social Proof</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900">Things People Say</h3>
+                <p class="text-slate-600 mt-2 text-sm">Feedback from engineering peers and clients on infrastructure reliability and communication.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                        "Khaled handled our Linux server transition smoothly. Our deployment is significantly faster, and the automated backup script he engineered with Btrfs snapshots gave our team complete peace of mind. Highly dependable technical expert."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center font-bold text-indigo-600 text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <span class="block font-bold text-slate-900 text-sm">Eng. A. Mostafa</span>
+                            <span class="block text-xs text-slate-400">Senior Full-Stack Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+                        "Great technical attention to detail. Khaled secured our VPS instances, configured our firewalls properly, and eliminated the brute-force attacks we were facing from the first day. Everything was delivered on time."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-700 text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <span class="block font-bold text-slate-900 text-sm">Technology Partner</span>
+                            <span class="block text-xs text-slate-400">Freelance Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: CALL TO ACTION & CONTACT FORM -->
     <section id="contact" class="py-20 max-w-3xl mx-auto px-4 sm:px-6">
         <div class="text-center mb-10">
-            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2 inline-block">Engage Security Services</span>
-            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Ready to Audit & Secure Your Assets?</h3>
+            <span class="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2 inline-block">10. Engage Infrastructure Services</span>
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Ready to Deploy, Harden, or Automate Your Servers?</h3>
             <p class="text-slate-600 text-sm sm:text-base mt-2">
-                Provide your scope specifications below or email directly at 
+                Specify your server requirements below or email directly at 
                 <a href="mailto:khaled.gamal.seif1@gmail.com" class="text-indigo-600 font-semibold underline hover:text-indigo-800">
                     khaled.gamal.seif1@gmail.com
                 </a>
@@ -480,32 +630,32 @@
         <!-- Formspree Endpoint Form -->
         <form action="https://formspree.io/f/xppzyvyr" method="POST" class="bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm space-y-6">
             
-            <!-- Scope Type Select with Dynamic Other option -->
+            <!-- Service Required -->
             <div>
                 <label class="block text-sm font-semibold text-slate-700 mb-2">
-                    What type of security assessment do you require?
+                    What type of Linux & Infrastructure service do you require?
                 </label>
                 <select id="service-type-select" name="service_type" onchange="toggleOtherInput(this.value)" class="w-full border border-slate-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
-                  <option value="Web & API Pentest">Web & API Penetration Testing (OWASP / Logic)</option>
-                  <option value="Active Directory Pentest">Active Directory & Internal Domain Assessment</option>
-                  <option value="Network Pentest">Network Perimeter & Infrastructure Pentest</option>
-                  <option value="Remediation & Re-test">Remediation & Patch Verification Consultation</option>
+                  <option value="Linux Server Deployment">Linux Server Deployment & Nginx Proxy Setup</option>
+                  <option value="OS Hardening & Security">Zero-Trust OS Hardening & Security Audits</option>
+                  <option value="Backup & Disaster Recovery">Backup & Automated Disaster Recovery Pipelines</option>
+                  <option value="Containerization (Docker/Podman)">Containerized Deployments (Docker / Podman)</option>
                   <option value="Other">Other (Please specify)</option>
               </select>
 
                 <!-- Dynamic Field when Other is selected -->
                 <div id="other-input-container" class="hidden mt-3">
                     <label class="block text-xs font-semibold text-slate-600 mb-1">
-                        Please specify your required engagement or technology stack:
+                        Please specify your required OS or technology stack:
                     </label>
-                    <input type="text" id="other-service-input" name="other_service_detail" placeholder="e.g., Cloud AWS Audit, Mobile App, Source Code Review..." class="w-full border border-indigo-300 bg-indigo-50/30 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
+                    <input type="text" id="other-service-input" name="other_service_detail" placeholder="e.g., Ansible Playbooks, WireGuard VPN, LVM Resizing..." class="w-full border border-indigo-300 bg-indigo-50/30 rounded-lg p-3 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
                 </div>
             </div>
 
-            <!-- Target Scope / URL -->
+            <!-- Target Scope / Server Count -->
             <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-2">Target Scope or Domain (IPs / URLs)</label>
-                <input type="text" name="scope_target" placeholder="e.g., staging.company.com, 192.168.1.0/24 (or leave blank if private/NDA)" class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Number of Servers / Distribution (e.g. 2 Nodes RHEL 9 / Ubuntu 24.04)</label>
+                <input type="text" name="server_specs" placeholder="e.g., 2 cloud VPS, Rocky Linux 9, or local home lab" class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
             </div>
 
             <!-- Contact Credentials -->
@@ -522,82 +672,89 @@
 
             <!-- Project Details & Timeline -->
             <div>
-                <label class="block text-sm font-semibold text-slate-700 mb-2">Project Scope, Environment & Timeline</label>
-                <textarea rows="4" name="message" placeholder="Please describe your architecture, testing window, whether staging or production, and any specific compliance needs..." class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition"></textarea>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">Project Requirements, Environment & Timeline</label>
+                <textarea rows="4" name="message" placeholder="Please outline what needs to be configured or secured, target deadlines, and any specific architectural constraints..." class="w-full border border-slate-300 rounded-lg p-3.5 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition"></textarea>
             </div>
 
             <!-- Submit Button -->
             <button type="submit" class="w-full py-4 px-6 rounded-lg text-white font-semibold bg-indigo-600 hover:bg-indigo-700 transition shadow-md hover:shadow-indigo-200">
-                Send Scope & Request Assessment
+                Send Infrastructure Scope & Inquire
             </button>
             
             <p class="text-center text-xs text-slate-400">
-                All inquiries are treated with strict confidentiality. Non-Disclosure Agreements (NDAs) available upon request.
+                All inquiries and IP addresses are treated with strict confidentiality. NDAs available upon request.
             </p>
         </form>
     </section>
 
-    <!-- Footer with Social Icons -->
-    <footer class="bg-white border-t border-slate-200 py-10 mt-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            
-            <!-- Left Info -->
-            <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-sm text-slate-600 text-center sm:text-left">
-                <span class="font-bold text-slate-900">Khaled Gamal Seif</span>
-                <span class="hidden sm:inline text-slate-300">•</span>
-                <span class="text-slate-500">Offensive Security Engineer & Penetration Testing</span>
+    <!-- SECTION 11: THANK YOU & FOOTER -->
+    <footer class="bg-white border-t border-slate-200 py-12 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- 11. Thank you Message -->
+            <div class="text-center mb-8 pb-8 border-b border-slate-100">
+                <h4 class="text-lg font-bold text-slate-900">Thank You for Visiting</h4>
+                <p class="text-sm text-slate-500 max-w-md mx-auto mt-1">
+                    Thank you for taking the time to review my systems portfolio. Looking forward to engineering scalable, bulletproof infrastructure for your next project.
+                </p>
             </div>
 
-            <!-- Middle / Social Media SVG Icons -->
-            <div class="flex items-center gap-5">
-                <!-- LinkedIn -->
-                <a href="https://linkedin.com/in/sirrootfire" target="_blank" rel="noopener noreferrer" title="LinkedIn"
-                   class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
-                    </svg>
-                </a>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Left Info -->
+                <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-sm text-slate-600 text-center sm:text-left">
+                    <span class="font-bold text-slate-900">Khaled Gamal Seif</span>
+                    <span class="hidden sm:inline text-slate-300">•</span>
+                    <span class="text-slate-500">Linux System Administrator & Infrastructure Security</span>
+                </div>
 
-                <!-- GitHub -->
-                <a href="https://github.com/sirRootfire" target="_blank" rel="noopener noreferrer" title="GitHub"
-                   class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
-                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
-                    </svg>
-                </a>
+                <!-- Middle / Social Media SVG Icons -->
+                <div class="flex items-center gap-5">
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/sirrootfire" target="_blank" rel="noopener noreferrer" title="LinkedIn"
+                       class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.45a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24Z"/>
+                        </svg>
+                    </a>
 
-                <!-- HackerOne -->
-               <a href="https://hackerone.com/sirrootfire" target="_blank" rel="noopener noreferrer" title="HackerOne"
-                   class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-700 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
-                    <svg class="w-3.5 h-4.5" viewBox="0 0 25 36" fill="none">
-                        <!-- Letter l (Slim Left Bar) -->
-                        <rect x="2" y="1" width="4.8" height="34" rx="2.4" fill="currentColor" />
-                        <!-- Number 1 (Shorter & Slim Right Bar) -->
-                        <rect x="17.2" y="13" width="4.8" height="22" rx="2.4" fill="currentColor" />
-                        <!-- Number 1 Slanted Arm (Slim & Angled Downwards) -->
-                        <path d="M19.5 14 L11.5 19.5" stroke="currentColor" stroke-width="4.8" stroke-linecap="round" />
-                    </svg>
-                </a>
-                
-                <!-- X (Twitter) -->
-                <a href="https://x.com/SirRootfire" target="_blank" rel="noopener noreferrer" title="X"
-                   class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
-                    <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                    </svg>
-                </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/sirRootfire" target="_blank" rel="noopener noreferrer" title="GitHub"
+                       class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+                        </svg>
+                    </a>
+
+                    <!-- HackerOne -->
+                   <a href="https://hackerone.com/sirrootfire" target="_blank" rel="noopener noreferrer" title="HackerOne"
+                       class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-700 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
+                        <svg class="w-3.5 h-4.5" viewBox="0 0 25 36" fill="none">
+                            <rect x="2" y="1" width="4.8" height="34" rx="2.4" fill="currentColor" />
+                            <rect x="17.2" y="13" width="4.8" height="22" rx="2.4" fill="currentColor" />
+                            <path d="M19.5 14 L11.5 19.5" stroke="currentColor" stroke-width="4.8" stroke-linecap="round" />
+                        </svg>
+                    </a>
+                    
+                    <!-- X (Twitter) -->
+                    <a href="https://x.com/SirRootfire" target="_blank" rel="noopener noreferrer" title="X"
+                       class="w-10 h-10 rounded-full bg-slate-50 border border-slate-200 flex items-center justify-center text-slate-600 hover:text-indigo-600 hover:border-indigo-200 hover:bg-indigo-50/50 hover:scale-110 transition duration-200">
+                        <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Right Copyright -->
+                <div class="text-xs text-slate-400 font-medium text-center sm:text-right">
+                    © 2026 Khaled Gamal Seif. All rights reserved.
+                </div>
             </div>
-
-            <!-- Right Copyright -->
-            <div class="text-xs text-slate-400 font-medium text-center sm:text-right">
-                © 2026 Khaled Gamal Seif. All rights reserved.
-            </div>
-
         </div>
     </footer>
+
+    <!-- Scripts for Tab Switching, Services, and Mobile Menu -->
     <script>
         function switchTab(tabName) {
-            const tabs = ['webapi', 'networkad', 'tools', 'systems'];
+            const tabs = ['distros', 'hardening', 'networking', 'automation'];
             
             tabs.forEach(t => {
                 const contentEl = document.getElementById('tab-' + t);
@@ -639,7 +796,6 @@
           const selectElement = document.getElementById('service-type-select');
           if (selectElement) {
               selectElement.value = serviceValue;
-              
               toggleOtherInput(serviceValue);
 
               selectElement.classList.add('ring-2', 'ring-indigo-600');
@@ -648,6 +804,7 @@
               }, 1200);
           }
         }
+
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             const iconBars = document.getElementById('menu-icon-bars');
